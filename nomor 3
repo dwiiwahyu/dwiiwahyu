@@ -1,0 +1,10 @@
+def hapus_spasi_berlebih(kalimat):
+    # Menghapus spasi di awal dan akhir kalimat
+    kalimat = kalimat.strip()
+    # Mengganti semua spasi berlebih dengan satu spasi normal
+    kalimat = " ".join(kalimat.split())
+    return kalimat
+
+kalimat = "saya tidak suka   memancing ikan "
+kalimat = hapus_spasi_berlebih(kalimat)
+print(kalimat)
