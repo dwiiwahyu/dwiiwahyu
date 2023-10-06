@@ -1,0 +1,9 @@
+def hitung_frekuensi_kata(kalimat, kata_dicari):
+    frkuensi = kalimat.lower().split().count(kata_dicari.lower())
+    return frkuensi
+
+kalimat_input = "saya mau makan. makan itu wajib. mau siang atau malam saya wajib makan"
+kata_dicari = "makan"
+
+hasil = hitung_frekuensi_kata(kalimat_input, kata_dicari)
+print(f"kata '(makan)' muncul sebanyak {hasil} kali.")
